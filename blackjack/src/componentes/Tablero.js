@@ -27,7 +27,6 @@ const Tablero = () => {
     const closeModal = () => {
       // Cierra el modal y reinicia para una nueva ronda
       setShowModal(false);
-      iniciarNuevaRonda();
     };
 
     const handleIniciarJuego = (nickname, avatarSeleccionado) => {

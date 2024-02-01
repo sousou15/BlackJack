@@ -96,6 +96,8 @@ h3{
   background-color: aliceblue;
   width: 20%;
   font-family: 'Jqka';
+  border-radius: 15px;
+
 }
 h2{
   font-family: 'Poker';
@@ -174,3 +176,34 @@ h2{
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra del modal */
 }
 
+/* Estilos específicos para pantallas pequeñas */
+@media only screen and (max-width: 600px) {
+  h2 {
+    font-size: 58px; /* Tamaño de letra reducido para pantallas pequeñas */
+  }
+  .avatares{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+  }
+  .avatares img{
+    width: 80px;
+    height: auto;
+  }
+
+  .textavatar{
+    background-color: antiquewhite;
+    border-radius: 20%;
+  }
+  body{
+    background-image: none;
+    background-color: darkgreen;
+  }
+  .carta img{
+    width: 80px !important; /* Agregado !important para forzar la aplicación */
+  }
+
+}

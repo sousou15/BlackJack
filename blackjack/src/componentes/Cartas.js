@@ -1,7 +1,7 @@
 // Cartas.js
 import React from 'react';
 
-const Carta = ({ id, title, bocaAbajo,  }) => {
+const Carta = ({ id, title, bocaAbajo }) => {
     // const imagePath = `../../public/cartasPNG/${id}.png`
     const imagePath = bocaAbajo
     ? `${window.location.origin}/cartasPNG/bocaAbajo.png`
@@ -42,16 +42,5 @@ const generarCartas = () => {
   return cardsData;
 };
 
-// const Cartas = () => {
-//   const cardsData = generarCartas();
-
-//   return (
-//     <div className="tablero">
-//       {cardsData.map((card) => (
-//         <Carta key={card.id} title={card.title} content={card.content}  valor={card.valor}/>
-//       ))}
-//     </div>
-//   );
-// };
 
 export { Carta, generarCartas }; // Exportar Carta y generarCartas para su uso en otras partes de la aplicación

@@ -1,0 +1,176 @@
+/* App.css */
+@font-face {
+  font-family: 'Poker';
+  src: url('../public/fonts/Poker.ttf') format('truetype'),
+}
+
+@font-face {
+  font-family: 'Jqka';
+  src: url('../public/fonts/JqkasWild-w1YD6.ttf') format('truetype'),
+}
+body{
+  background-image: url("../public/996802.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.tablero {
+  text-align: center;
+  margin: 20px auto;
+  padding: 20px;
+  /* background-color: #2ecc71; */
+  border-radius: 10px;
+  max-width: 70%;
+  
+}
+
+.resultado {
+  margin-top: 20px;
+  color: #e74c3c;
+}
+
+button {
+  margin-top: 10px;
+  margin-right: 10px; /* Añade espacio entre los botones */
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #3498db;
+  color: #fff;
+  border: solid white 1px;
+  border-radius: 5px;
+  transition: all 1s;
+  font-family: 'Jqka';
+}
+
+/* Estilo específico para el último botón, para evitar margen a la derecha */
+button:last-child {
+  margin-right: 0;
+}
+
+.plantarse{
+  background-color: red;
+}
+
+.solicitar{
+  background-color: purple;
+}
+
+button:hover {
+  background-color: #0c0e0f;
+  transform: scale(1.1);
+}
+.jugador,
+.crupier {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.carta {
+  display: inline-block;
+  margin: 0 5px;
+  transition: all 1s;
+}
+.carta:hover{
+  transform: scale(1.3);
+}
+
+.carta img {
+  width: 100px; /* Ajusta el tamaño de las cartas según sea necesario */
+  height: auto;
+}
+
+.carta img.bocaAbajo {
+  filter: brightness(50%); /* Hace que las cartas boca abajo sean más oscuras */
+}
+
+.mostrarsuma {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
+
+h3{
+  color: black;
+  background-color: aliceblue;
+  width: 20%;
+  font-family: 'Jqka';
+}
+h2{
+  font-family: 'Poker';
+  font-size: 120px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+.jugador{
+  display: flex;
+  justify-content: center;
+
+}
+
+.crupier{
+  display: flex;
+  justify-content: center;
+}
+.resultado{
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.app{
+  display: flex;
+  justify-content: center;
+}
+
+.introducir{
+  height: 40px;
+  font-size: 30px;
+  margin-top: 10%;
+}
+
+.mostrarsuma{
+  display: flex;
+  justify-content: center;
+}
+
+.usuario{
+  font-family: 'Jqka';
+  font-size: 35px;
+}
+
+.textavatar{
+  font-family: 'Jqka';
+  font-size: 35px;
+}
+
+.inicio{
+  text-align: center;
+}
+
+.avatarSeleccionado {
+  border: 2px solid #ffcc00; /* Añade un borde amarillo */
+  box-shadow: 0 0 10px #ffcc00; /* Añade una sombra amarilla */
+  transform: scale(1.2);
+}
+
+.modal {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fff; /* Fondo del modal */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra del modal */
+}
+

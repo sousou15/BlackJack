@@ -1,3 +1,4 @@
+#ESTO ES UN SCRIPT PARA RENOMBRAR LAS CARTAS DE TAL FORMA QUE TENGA LA ESTRUCTURA [NÚMERO][PRIMERA LETRA DEL PALO].png
 # import os
 
 # def cambiar_nombres_directorio(ruta_directorio):

@@ -88,11 +88,13 @@ const Tablero = () => {
       repartirCartas();
     };
     const solicitarCarta = () => {
-      // Asegurarse de que hay suficientes cartas disponibles
-      if (cartasDisponibles.length < 1) {
-        alert('No hay suficientes cartas disponibles.');
+      // Asegurarse de que hay suficientes cartas disponibles y se pueda seguir jugando
+      if (cartasDisponibles.length < 1 || juegoTerminado) {
+        alert(`No hay suficientes cartas disponibles o el juego ha terminado.
+Reinicia la ronda para seguir jugando.`);
         return;
       }
+      
 
       // Solicitar una carta adicional al jugador
       const nuevaCarta = cartasDisponibles.pop();
@@ -216,9 +218,9 @@ const Tablero = () => {
         </div>
 
         
-      <button onClick={juegoTerminado && resultado ? iniciarNuevaRonda : repartirCartas}>
-        {juegoTerminado && resultado ? 'Nueva Ronda' : 'Repartir Cartas'}
-      </button>
+        <button onClick={juegoTerminado ? iniciarNuevaRonda : repartirCartas}>
+          {juegoTerminado && resultado ? 'Nueva Ronda' : 'Empezar Partida'}
+        </button>
 
         <button className='solicitar' onClick={solicitarCarta}>Solicitar Carta</button>
         <button className='plantarse' onClick={plantarse}>Plantarse</button>
